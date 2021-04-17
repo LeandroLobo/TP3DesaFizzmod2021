@@ -1,6 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 body{
-    padding: 0;
-    margin: 0;
     background-color: black;
-    color: green;
+    color: rgb(28, 218, 28);
+    display: flex;
+    justify-content: center;
+    font-family: 'Cairo', sans-serif;
 }
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 500px;
+}
+#salute{
+    color: coral;
+}
+p, h3, h4{
+    margin: 0;
+    padding: 0;
+}
+hr{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color:hotpink;
+    margin: 10px;
+    padding: 5px 10px;
+    border: 2px solid rgb(28, 218, 28);
+    border-radius: 4px;
+    text-align: center;
+    min-width: 76px;
+}
+nav{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+legend{
+    color: hotpink;
+}
+label{
+    display: block;
+}
+input[type="submit"]{
+    background-color: black;
+    color: hotpink;
+    margin-top: 10px;
+    cursor: pointer;
+}
+@media all and (max-width: 500px) {
+    html{
+        font-size: 14px;
+    }
+  }

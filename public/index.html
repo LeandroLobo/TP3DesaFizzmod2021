@@ -8,11 +8,47 @@
     <title>TP3 root: static(public)</title>
 </head>
 <body>
-    <h3 id="salute"></h3>
-    <p>Este es un recurso estático desde la carpeta 'public'</p>
+    <div class="page">
 
-    <footer>Trabajo realizado por <strong>Leandro Lobo</strong> || Abril, 2021.</footer>
+        <h3>TP#3 Desafizzmod2021: Hosted Server (Express - Node.js)</h3>
+        <p>Este es un recurso estático desde la carpeta 'public'.</p>
+        <p>root response: </p>
+        <h3 id="salute"></h3>
+        
+        <hr>
 
+        <h4>Otras rutas del proyecto definidas con GET</h4>
+        <nav>
+            <a href="/random" target="_blank">/random</a>
+            <a href="/info" target="_blank">/info</a>
+        </nav>
+        <form action="/operaciones" method="get" autocomplete="off" target="_blank">
+            <fieldset>
+                <legend>/operaciones</legend>
+                <div class="input-group">
+                    <label for="num1">num1:</label>
+                    <input type="text" name="num1" id="num1">
+                </div>
+                <div class="input-group">
+                    <label for="num2">num2:</label>
+                    <input type="text" name="num2" id="num2">
+                </div>
+                <div class="input-group">
+                    <label for="operacion">operación:</label>
+                    <input type="text" name="operacion" id="operacion">
+                </div>
+                <input type="submit" value="enviar solicitud GET a /operaciones">
+            </fieldset>
+        </form>
+
+        <hr>
+
+        <nav class="bottom-nav">
+            <a href="TP3-consignas.pdf" target="_blank" rel="noopener noreferrer">Ver consignas del trabajo</a>
+            <a href="https://github.com/LeandroLobo/TP3DesaFizzmod2021" target="_blank" rel="noopener noreferrer">Ir al repositorio</a>
+        </nav>
+        <footer>Trabajo realizado por <strong>Leandro Lobo</strong> || Abril, 2021.</footer>
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>

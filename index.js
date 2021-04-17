@@ -6,7 +6,7 @@ import operation from './lib/operation.js';
 const app = express();
 
 /*********************************************************
- * Routing GET
+ * Routing
  * '/' defined in 'public' folder as static resource
  *********************************************************/
 app.use(express.static('public'));
