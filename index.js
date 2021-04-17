@@ -1,11 +1,9 @@
 import express from 'express';
 import randomNumbers from './lib/random-numbers.js';
 import proyectInfo from './lib/proyect-info.js';
+import operation from './lib/operation.js';
 
 const app = express();
-
-//app.use(express.urlencoded({extended: true}));
-//app.use(express.json());
 
 /*********************************************************
  * Routing GET
@@ -19,6 +17,10 @@ app.get('/random', (req,res) => {
 
 app.get('/info', async (req,res) => {
     res.send(await proyectInfo());
+});
+
+app.get('/operaciones', (req,res) => {
+    res.send(operation(req.query));
 });
 
 /*********************************************************
